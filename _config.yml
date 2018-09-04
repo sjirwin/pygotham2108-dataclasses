@@ -1,0 +1,24 @@
+title: Dataclasses Are Here
+description: The PEP 557 dataclasses module was added in Python 3.7 and so is one of the newest features of the language. Now that they are here, they bring a few questions with them. In this talk, we will explore some of those questions. What functionality do they provide? How do they compare to other Python data structures? How (and when) to use them?
+author: Scott J Irwin
+
+# using parts of jekyll-reveal framework (https://github.com/dploeger/jekyll-revealjs.git)
+reveal_path: reveal.js/
+reveal_theme_path: reveal.js/css/theme/ 
+reveal_theme: white.css
+reveal_notes_server: false
+reveal_transition: slide
+reveal_options: 
+  controlsLayout: edges
+reveal_dependencies: 
+extra_css: styles/bloomberg.css
+highlight_style_sheet: styles/zenburn-dark.css
+
+# leave these three lines alone
+markdown: redcarpet
+highlighter: rouge
+markdown_ext: ignoreme
+
+# Collections
+collections: 
+  - slides
