@@ -1,1 +1,3 @@
-# pygotham2108-dataclasses
+# PyGotham 2018
+
+## Dataclasses are here. Now what?
