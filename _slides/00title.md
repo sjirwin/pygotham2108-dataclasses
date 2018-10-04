@@ -37,8 +37,17 @@ Scott Irwin<br/>
 
 ### Quick Background
 
-- <span style="color:indianred">```dataclasses```</span> is a standard module added in Python 3.7 and was written by Eric V. Smith
-- Described in the Python [docs](https://docs.python.org/3/library/dataclasses.html) and in [PEP 557](https://www.python.org/dev/peps/pep-0557/)
+- <span style="color:indianred">```dataclasses```</span> module
+  - added to standard library in Python 3.7
+  - written by Eric V. Smith
+- Described in:
+  - Python [docs](https://docs.python.org/3/library/dataclasses.html)
+  - [PEP 557](https://www.python.org/dev/peps/pep-0557/)
+
+--
+
+### A Few More Details
+
 - Module includes:
   - <span style="color:indianred">```@dataclass```</span> - class decorator which generates special methods (a.k.a. dunder methods)
   - <span style="color:indianred">```field()```</span> - function which provides additional control over **field** definitions

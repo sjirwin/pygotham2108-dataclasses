@@ -73,25 +73,37 @@ def __lt__(self, other):
 
 --
 
-### More About Decorator Options
+### Decorator Options Caveats
 
-- If class defines <span style="color:indianred">```__init__()```</span>, ```init``` option is ignored
-- If class defines <span style="color:indianred">```__repr__()```</span>, ```repr``` option is ignored
-- If class defines <span style="color:indianred">```__eq__()```</span>, ```eq``` option is ignored
-- <span style="color:indianred">```TypeError```</span> is raised in these cases
+- Some decorator option will be ignored if class defines some methods
+  - <span style="color:indianred">```__init__()```</span>, ```init``` option is ignored
+  - <span style="color:indianred">```__repr__()```</span>, ```repr``` option is ignored
+  - <span style="color:indianred">```__eq__()```</span>, ```eq``` option is ignored
+
+--
+
+### Decorator Options Caveats
+
+- Decorator can raise <span style="color:indianred">```TypeError```</span>
   - ```order``` is ```True``` and class defines any order methods (e.g., <span style="color:indianred">```__lt__()```</span>)
   - ```frozen``` is ```True``` and class defines either <span style="color:indianred">```__setattr__()```</span> or <span style="color:indianred">```__delattr__()```</span>
   - ```unsafe_hash``` is ```True``` and class defines <span style="color:indianred">```__hash__()```</span>
 
 --
 
-### Beyond Simple Fields:<br/>```field()``` Function
+### Beyond Simple Fields
 
 - Basic syntax can define simple field and default value (only)
+- <span style="color:indianred">```field()```</span> function has additional features
+
+--
+
+### ```field()``` Function
+
 - Use <span style="color:indianred">```field()```</span> function for additional control
-  - ```repr```: field excluded from ```repr``` if ```False```
-  - ```init```: field excluded from ```init``` if ```False```
-  - ```compare```: field excluded from ```eq``` if ```False```
+  - ```repr```: if ```False```, field excluded from <span style="color:indianred">```repr```</span>
+  - ```init```: if ```False```, field excluded from <span style="color:indianred">```init```</span>
+  - ```compare```: if ```False```, field excluded from <span style="color:indianred">```eq```</span>
   - ```default_factory```:
     - Needed to set default value to a mutable type
     - Can be any zero argument function
