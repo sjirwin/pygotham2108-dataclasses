@@ -11,8 +11,8 @@ title: How do they compare with existing data structures
 - Intentionally behave like a ```tuple```
 - Immutable
 - No field options
-- Descriptive ```repr```
 - Cannot add methods
+- Descriptive ```repr```
 - Python 2.6 and later
 
 --
@@ -21,8 +21,8 @@ title: How do they compare with existing data structures
 
 - Values accessed by keys, not attributes
 - No default values
-- Semi-descriptive ```repr```
 - Cannot add methods
+- Semi-descriptive ```repr```
 - All Python versions
 
 --
@@ -31,8 +31,8 @@ title: How do they compare with existing data structures
 
 - Values accessed by keys, not attributes
 - Same default_factory applied to all entries
-- Semi-descriptive ```repr```
 - Cannot add methods
+- Semi-descriptive ```repr```
 - Python 2.5 and later
 
 --
@@ -58,7 +58,7 @@ title: How do they compare with existing data structures
 ### Attrs
 
 - Not part of the Python standard library
-- Slightly more verbose syntax
+- _Slightly_ more verbose syntax
 - Has additional features (e.g., validators, converters)
   - One of the inspirations for dataclasses
 - Supports all mainstream Python versions, including Python 2.7 and PyPy

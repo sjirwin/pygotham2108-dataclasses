@@ -8,7 +8,7 @@ title: What are some additional features of dataclasses
 
 ### Basic Decorator
 
-These uses of <span style="color:indianred">```dataclass()```</span> are equivalent
+These uses of <span style="color:indianred">```@dataclass()```</span> are equivalent
 
 ```python
 @dataclass
@@ -75,7 +75,7 @@ def __lt__(self, other):
 
 ### Decorator Options Caveats
 
-- Some decorator option will be ignored if class defines some methods
+- A decorator option will be ignored if class defines certain methods
   - <span style="color:indianred">```__init__()```</span>, ```init``` option is ignored
   - <span style="color:indianred">```__repr__()```</span>, ```repr``` option is ignored
   - <span style="color:indianred">```__eq__()```</span>, ```eq``` option is ignored
@@ -94,7 +94,7 @@ def __lt__(self, other):
 ### Beyond Simple Fields
 
 - Basic syntax can define simple field and default value (only)
-- <span style="color:indianred">```field()```</span> function has additional features
+- <span style="color:indianred">```field()```</span> function provides features
 
 --
 

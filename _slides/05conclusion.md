@@ -6,7 +6,7 @@ title: Conclusion
 
 - Dataclasses are new in Python 3.7
   - But the idea has been around for a while
-- Originally described in [PEP 557](https://www.python.org/dev/peps/pep-0557/)
+- Described in [PEP 557](https://www.python.org/dev/peps/pep-0557/)
 - Reduces the effort needed to implement user-defined classes
   - Decorator and ```field``` function automatically add generated special methods
 
